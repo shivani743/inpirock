@@ -297,8 +297,10 @@ img {
 
 .title-4 {
     font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #00a4da;
 }
 
 .white-title-1 {
@@ -1260,7 +1262,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .header-fix-wrap {
-    background-color: #ffffff;
+    background-color: #000000d6;
     padding: 30px 0;
 }
 
@@ -1832,7 +1834,7 @@ textarea:focus:-ms-input-placeholder {
 .primary-navbar>li>a {
     font-weight: 500;
     font-size: 15px;
-    padding: 15px;
+    padding: 15px 9px;
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -1872,7 +1874,7 @@ textarea:focus:-ms-input-placeholder {
 /*-- Sticky Header --*/
 .header-fix-wrap.is-sticky {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
-    padding: 20px 10px;
+    padding: 4px 40px;
     position: fixed !important;
     top: 0;
     left: 0;
@@ -2954,6 +2956,7 @@ textarea:focus:-ms-input-placeholder {
 .main-slider-1, .main-slider-1 .item {
     position: relative;
     z-index: 1;
+    height: 600px;
 }
 
 .main-slider-1 .item::after {
@@ -3015,7 +3018,7 @@ textarea:focus:-ms-input-placeholder {
     bottom: 0;
     content: "";
     height: 100%;
-    left: 45%;
+    left: 45.7%;
     margin-left: 18px;
     position: absolute;
     top: 0;
@@ -3575,7 +3578,7 @@ textarea:focus:-ms-input-placeholder {
 }
 
 .agency .info>h2 {
-    margin: 0 0 20px;
+    margin: 0 0 10px;
 }
 
 /*-- ./ Travel Agency --*/
@@ -6865,7 +6868,7 @@ ul.list-caret small {
 .primary-navbar>li.active>a, .main-slider-1 .search-tabs a:hover span, .main-slider-1 .search-tabs .active a span, .main-banner-1 .search-tabs .active a,
 .btn.focus, .btn:focus, .btn:hover, .current a, .detail-tabs .list-inline>li.active a, .tab-holder .tab-pane h3 a.collapsed:after,
 ul.list-caret li:before, .search-form button.form-control:hover {
-    color: #fcb100;
+    color: #00a4da;
 }
 
 
@@ -6878,23 +6881,25 @@ ul.list-caret li:before, .search-form button.form-control:hover {
 .main-banner-1 .search-tabs .active .icon, .main-banner-1 .search-tabs .active a::before,
 .slider-wrap .search-tabs .active .icon, .slider-wrap .search-tabs .active a::before, .widget-deal .title-2::after,
 .filtrable a:hover:before, .filtrable .current a:before, .tab-holder .list-inline .active a::before {
-    background-color: #fcb100;
+    background-color: #00a4da;
 }
 
 .thumbnails .thumbnail .caption.hovered {
-    background-color: rgba(252, 177, 0, 0.7);
+    background-color: rgb(0 164 218 / 43%);
 }
 
+
 .feature-2 .info {
-    background-color: rgba(252, 177, 0, 0.8);
+    background-color: rgb(0 164 218 / 43%);
 }
+
 
 /* Border Color */
 .primary-navbar>li>.dropdown-menu,
 .social-icons-1>li a:hover, .social-icons-1>li a:focus, .social-icons-2>li a:hover, .social-icons-2>li a:focus,
 .testimonials-thumb .synced .item, .testimonials-thumb .item:hover, .promotion .navigation img:hover, .promotion .navigation .synced img,
 .main-banner-1 .search-tabs .active .icon, .slider-wrap .search-tabs .active .icon, .detail-tabs .list-inline>li:hover, .detail-tabs .list-inline>li.active {
-    border-color: #fcb100;
+    border-color: #00a4da;
 }
 
 /******************************* 
@@ -6936,9 +6941,77 @@ ul.list-caret li:before, .search-form button.form-control:hover {
     letter-spacing: -.3px;
     text-align: center;
     padding-top: 15px;
-    float: right;
 }
 
 #tab-container{
     width: 800px;
+}
+
+.tour-img{
+    border: 0;
+    /* position: unset; */
+    /* margin: 0 auto; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: -98px;
+    margin-top: -37px;
+}
+@media (min-width: 1199px) and (max-width: 1399.98px) {
+    .tour-img{
+        margin-top: -39px;
+        margin-left: -24px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+    .tour-img{
+        margin-top: 20px;
+        margin-left: -45px;
+    }
+}
+.title-p{
+    text-align: center;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+}
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 37px;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #bebebe;
+    margin-top: 8px;
+}
+
+.has-search .form-control{
+    border: medium none;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 13px;
+    height: 39px;
+    line-height: normal;
+    padding: 10px 23px!important;
+    font-weight: 500;
+    background: #4c4c4c99;
+    width: 100%;
+    margin-top: 0px;
+    width: 300px;
+    color: #bebebe;
+    border-radius: 100px;
+}
+.has-search .form-control::placeholder {
+    color: #bebebe;
+  }
+.btn-primary{
+    color: #fff;
+    background-color: #00a4da;
+    border-color: #00a4da;
+    border-radius: 100px;
+    color: #fff!important;
+    padding: 7px 16px!important;
 }
