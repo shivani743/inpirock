@@ -15,7 +15,6 @@
 </div>
 <div class="fixme ">
   <div class="nav">
-
     <div class="nav-btn">
       <label for="nav-check">
         <span></span>
@@ -42,84 +41,118 @@
   </div>
 </div>
 
-
-
-
-
 <!-- Listing Start -->
-<section class="listing-wrap pt-50">
+<section class="listing-wrap">
   <div class="container">
     <div class="clearfix">
-      <div class="col-md-9 col-sm-8 pt-50 style-one no-padding">
-        <div class="row">
-          <div class="col-md-12">
-            <ul class="trip-timeline">
-              <li>
-                <div class="empty-trip-icon"></div>
-                <div class="trip-label empty"> <span>Start: Ranchi</span> </div>
-              </li>
-              <li>
-                <div class="plane-trip-icon"><i class="fas fa-plane fa-flip-270"></i></div>
-                <div class="trip-label">
-                  <div class="dropdown">
-                    <button onclick="myFunction()" class="dropdownpbtn">Fly &nbsp;<i
-                        class="fas fa-angle-right"></i></button>
-                    <div id="myDropdown" class="dropdown-content" id="trip-content">
-                      <div class="card">
-                        <h4><strong>Ranchi to Sydney</strong></h4>
-                        <hr class="divider-1">
-                        <div class="row">
-                          <div class="col-md-1">
-                            <i class="fas fa-check"></i>
-                          </div>
-                          <div class="col-md-10">
-                            <span>Fly</span>
-                            <p><i class="fas fa-check"></i> 22 h 30 min (flight time: 18 h 45 min)</p>
-                          </div>
-                        </div>
-                        <hr class="divider-1">
-                        <a href="">Edit Travel</a>
-                      </div>
-                    </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 sec-space">
+          <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="">
+                <div class="inner-circle"></div>
+                <br>
+                <div class="dropdown">
+                  <a href="">Start: Ranchi&nbsp;<i class="fas fa-caret-down"></i></a>
+                  <div class="dropdown-content">
+                    <a href="">Edit Start City</a>
+                    <a href="">Edit Dates</a>
                   </div>
                 </div>
-              </li>
-              <li>
-                <div class="trip-icon bg-green"> 1</div>
-                <div class="trip-label">
-                  <h2><a href="javascript:void(0);">
-                      New York City
-                    </a></h2>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="">
+                <div><i class="fas fa-plane"></i></div>
+                <div class="dropdown">
+                  <a onclick="myFunction()" class="dropbtn">Fly <i class="fas fa-chevron-right"></i></a>
+                  <div class="dropdown-content fly-trip">
+                    <h5 class="text-left">Ranchi to New Delhi</h5>
+                    <hr class="divider-5">
+                    <a href="">Fly
+                      <div class="duration">
+                        <span><i class="fas fa-plane-departure"></i>&nbsp;&nbsp;&nbsp;3 h 15 min</span>
+                        <span> (flight time: 1 h 35 min)</span>
+                      </div>
+                    </a>
+                    <a href="">Drive
+                      <div class="duration">
+                        <span><i class="fas fa-car"></i>&nbsp;&nbsp;&nbsp;16 hour</span>
+                      </div>
+                    </a>
+                    <a href="">Train
+                      <div class="duration">
+                        <span><i class="fas fa-subway"></i>&nbsp;&nbsp;&nbsp; 19 h 45 min</span>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-              </li>
-              <li>
-                <div class="plane-trip-icon"><i class="fas fa-plane"></i></div>
-                <div class="trip-label">
-                  <h2>Fly</h2>
-                </div>
-              </li>
-              <li>
-                <div class="empty-trip-icon"></div>
-                <div class="trip-label empty"> <span>End: Ranchi</span> </div>
-              </li>
-            </ul>
-            <button class="theme-btn btn-edit" type="submit" align="center"> Edit</button>
+              </div>
+            </div>
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="">
+                <i class="fas fa-map-marker-alt map-icon"></i>
+                <p><strong>New Delhi - 4 Nights</strong></p>
+              </div>
+            </div>
 
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-4 pt-50 no-padding listing-sidebar">
-        <div class="widget-map">
-          <div class="contact-map">
-            <div id="map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711292.110871688!2d64.43748693609942!3d20.01115759964804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1642605650619!5m2!1sen!2sin"
-                width="265" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="timeline-step">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="">
+                <div><i class="fas fa-plane"></i></div>
+                <div class="dropdown">
+                  <a onclick="myFunction()" class="dropbtn">Fly <i class="fas fa-chevron-right"></i></a>
+                  <div class="dropdown-content fly-trip">
+                    <h5 class="text-left">Ranchi to New Delhi</h5>
+                    <hr class="divider-5">
+                    <a href="">Fly
+                      <div class="duration">
+                        <span><i class="fas fa-plane-departure"></i>&nbsp;&nbsp;&nbsp;3 h 15 min</span>
+                        <span> (flight time: 1 h 35 min)</span>
+                      </div>
+                    </a>
+                    <a href="">Drive
+                      <div class="duration">
+                        <span><i class="fas fa-car"></i>&nbsp;&nbsp;&nbsp;16 hour</span>
+                      </div>
+                    </a>
+                    <a href="">Train
+                      <div class="duration">
+                        <span><i class="fas fa-subway"></i>&nbsp;&nbsp;&nbsp; 19 h 45 min</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-step mb-0">
+              <div class="timeline-content" data-toggle="popover" data-trigger="hover" data-placement="top" title="">
+                <div class="inner-circle"></div>
+                <br>
+                <div class="dropdown">
+                  <a href="">End: Ranchi&nbsp;<i class="fas fa-caret-down"></i></a>
+                  <div class="dropdown-content">
+                    <a href="">Edit Start City</a>
+                    <a href="">Edit Dates</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-
+        <div class="col-md-8">
+          <div class="widget-map">
+            <div class="contact-map">
+              <div id="map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711292.110871688!2d64.43748693609942!3d20.01115759964804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1642605650619!5m2!1sen!2sin"
+                  width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4"></div>
       </div>
+
     </div>
   </div>
 </section>
@@ -135,8 +168,6 @@
         </div>
         <div class="col-md-4" align="right">
           <button class="theme-btn btn-2" type="submit" align="center"> See day by day plan</button>
-
-
         </div>
       </div>
       <hr class="divider-1">
