@@ -15,12 +15,17 @@ private width = 640
 
   }
 
-  ngOnInit() {
-this.server.getPlacesPhotos(this.sampleId, this.height, this.width).subscribe((data) => {
-  console.log(data);
-})
+  async ngOnInit() {
+const res = await this.server.getPlaces('Goa')
+
+
+console.log(res,"saty")
+
+
+
 
 }
+
 }
 
 

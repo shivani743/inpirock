@@ -8,21 +8,30 @@ import { HomeModule } from './home/home.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
+import { GooglePlacesComponent } from './google-places/google-places.component';
+import { GooglePlaceModule } from "ngx-google-places-autocomplete";
 
-    // HomeComponent
-  ],
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+@NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-
-    HttpClientModule
+    GooglePlaceModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    GooglePlacesComponent,
+
+
+    // HomeComponent
+  ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,19 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-
+import { ServerService } from '../services/server.service';
+declare var google: any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  formattedaddress:any;
+  adres:any;
+  items:any =[];
+  options={
+    types: ['address'],
 
-  constructor(private route: ActivatedRoute, private router: Router) { }
 
-  ngOnInit(): void {
+  }
+  searchKey: any = "Goa";
+
+  constructor(private route: ActivatedRoute, private router: Router, private server: ServerService) { }
+
+  ngOnInit() {
+    this.searchh()
+
+
   }
 
   search() {
+
 this.router.navigate(['/places'],
 {
   queryParams: {
@@ -24,4 +38,26 @@ this.router.navigate(['/places'],
 );
 
   }
+
+address(event: any) {
+
+  console.log(event)
+  this.formattedaddress= event.formatted_address
+  // const res = new google.maps.places.PlacesService(event.formatted_address)
+  // console.log(res)
+}
+
+
+
+searchh() {
+  this.server.getPlacesSuggestions(this.searchKey).subscribe((data:any) => {
+console.log(data)
+    this.items = data[0].description;
+
+  })
+
+}
+
+
+
 }

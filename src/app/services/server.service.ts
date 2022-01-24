@@ -14,7 +14,7 @@ export class ServerService {
 
 
    }
-private BASE_URL = 'http://localhost:3000/api/';
+private BASE_URL = 'http://localhost:3000/user/';
 private sample_photo_id = 'Aap_uEBLF3KN_DIY00w1ORDNCndNVnZbbt5Y5hGrKAK1L4f5n8Ln1Pq7oJBJcSfORwAcGk8u2Zr8kRKBJyZtFLYIQfbBrS37Z0fBN_ueJPjwipezOnx5BEaXl519BTdQ6G1ydEg_wXJYG7lTL1Yo1UJotkButvErzQeaZQfrrIdhdg2seLfM';
 private sampleWidth = 4000;
 private sampleHeight = 1800
@@ -27,4 +27,40 @@ const url = `https://maps.googleapis.com/maps/api/place/photo?photo_reference=${
 
   return this.http.get(url);
 }
+
+
+ getPlacesSuggestions(placeName: string) {
+
+  const url = this.BASE_URL + 'suggestplace/' + placeName;
+// const token = localStorage.getItem('token')
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+    })
+  const req =  this.http.get(url, {headers: headers})
+
+  return req
+}
+
+postPlan(payload:any){
+  // const token = localStorage.getItem('token')
+  const headers = new HttpHeaders({
+    'Content-Type': 'application/json',
+
+  })
+  // Authorization: `Bearer ` + token,
+ return this.http.post(this.BASE_URL+ '/user/postplan', JSON.stringify(payload), {headers: headers})
+}
+
+async getPlaces(placeName: string) {
+
+  const url = this.BASE_URL + 'suggestplace/' + placeName;
+// const token = localStorage.getItem('token')
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+    })
+  const req = await this.http.get(url, { headers: headers }).toPromise()
+
+  return req
+}
+
 }
