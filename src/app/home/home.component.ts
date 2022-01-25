@@ -8,56 +8,42 @@ declare var google: any;
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  formattedaddress:any;
-  adres:any;
-  items:any =[];
-  options={
+  formattedaddress: any;
+  adres: any;
+  items: any = [];
+  options = {
     types: ['address'],
-
-
   }
   searchKey: any = "Goa";
-
   constructor(private route: ActivatedRoute, private router: Router, private server: ServerService) { }
-
   ngOnInit() {
     this.searchh()
-
-
   }
 
+
+  //for search places//
   search() {
-
-this.router.navigate(['/places'],
-{
-  queryParams: {
-    placeName : 'Goa',
-    date : '2020-01-01'
-}
-}
-);
+    this.router.navigate(['/places'],
+      {
+        queryParams: {
+          placeName: 'Goa',
+          date: '2020-01-01'
+        }
+      }
+    );
 
   }
 
-address(event: any) {
+  address(event: any) {
+    console.log(event)
+    this.formattedaddress = event.formatted_address
+  }
 
-  console.log(event)
-  this.formattedaddress= event.formatted_address
-  // const res = new google.maps.places.PlacesService(event.formatted_address)
-  // console.log(res)
-}
-
-
-
-searchh() {
-  this.server.getPlacesSuggestions(this.searchKey).subscribe((data:any) => {
-console.log(data)
-    this.items = data[0].description;
-
-  })
-
-}
-
-
+  searchh() {
+    this.server.getPlacesSuggestions(this.searchKey).subscribe((data: any) => {
+      console.log(data)
+      this.items = data[0].description;
+    })
+  }
 
 }
