@@ -1,5 +1,331 @@
-
-
+/*---------------- 1.1 Preloader Starts ------------------*/
+@-webkit-keyframes "animate" {
+	17% {
+		-webkit-border-bottom-right-radius: 3px;
+	}
+	25% {
+		-webkit-transform: -webkit-translateY(9px) -webkit-rotate(22.5deg);
+	}
+	50% {
+		-webkit-transform: -webkit-translateY(18px) -webkit-scale(1, 0.9) -webkit-rotate(45deg);
+		border-bottom-right-radius: 40px;
+	}
+	75% {
+		-webkit-transform: -webkit-translateY(9px) -webkit-rotate(67.5deg);
+	}
+	100% {
+		-webkit-transform: -webkit-translateY(0) -webkit-rotate(90deg);
+	}
+}
+@-webkit-keyframes "shadow" {
+	0%,100% {
+		-webkit-transform: -webkit-scale(1, 1);
+	}
+	50% {
+		-webkit-transform: -webkit-scale(1.2, 1);
+	}
+}
+@-moz-keyframes "animate" {
+	17% {
+		border-bottom-right-radius: 3px;
+	}
+	25% {
+		transform: translateY(9px) rotate(22.5deg);
+	}
+	50% {
+		transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+		border-bottom-right-radius: 40px;
+	}
+	75% {
+		transform: translateY(9px) rotate(67.5deg);
+	}
+	100% {
+		transform: translateY(0) rotate(90deg);
+	}
+}
+@-moz-keyframes "shadow" {
+	0%,100% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.2, 1);
+	}
+}
+@keyframes "animate" {
+	17% {
+		border-bottom-right-radius: 3px;
+	}
+	25% {
+		transform: translateY(9px) rotate(22.5deg);
+	}
+	50% {
+		transform: translateY(18px) scale(1, 0.9) rotate(45deg);
+		border-bottom-right-radius: 40px;
+	}
+	75% {
+		transform: translateY(9px) rotate(67.5deg);
+	}
+	100% {
+		transform: translateY(0) rotate(90deg);
+	}
+}
+@keyframes "shadow" {
+	0%,100% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.2, 1);
+	}
+}
+/*---------------- 1.1 Preloader Ends ------------------*/
+/*---------------- 1.2 Global properties (body, common classes, structure etc) Starts ----------------------*/
+/*-- List Style-1 --*/
+/*-- ./ List Style-1 --*/
+/*------------------- 1.2 Global properties (body, common classes, structure etc) Ends -----------------*/
+/*---------------------- 1.3 Section Space Starts ----------------------------*/
+/*---------------------------- 1.3 Page section block Ends ---------------------------*/
+/*--------------------------- 1.4 Typography (section title, links, page dividers) Starts -------------------------- */
+/*------------------------ 1.4 Typography (section title, links, page dividers) Ends ---------------------- */
+/*--------------------------- 1.5 Buttons Starts ---------------------- */
+/*-- Slider Navigation Styles --*/
+/*------------------------ 1.5 Buttons Ends ---------------------------- */
+/*----------------------- 1.6 Form / Input / Textarea Starts --------------------------- */
+/*-- Checkbox/Radiobox Starts --*/
+/*-- Checkbox/Radiobox Ends --*/
+/*--Bootstrap Select--*/
+/*.form-control:focus {
+    background-color: transparent;
+    border-color: #e7e8ec;
+    box-shadow: none;
+    outline: 0 none;
+}*/
+/*---------------------------- 1.6 Form / Input / Textarea Ends ------------------------------ */
+/*---------------------------------- 1.7 Content Middle Starts -------------------------------- */
+/*------------------------ 1.7 Content Middle Ends ------------------------ */
+/*--------------------------1.8 Theme Fonts Starts------------------- */
+/*-------------------------1.8 Theme Fonts Ends--------------------- */
+/*-------------------------  1.9 - Rating Stars Starts --------------------- */
+/*------------------------- 1.9 - Rating Stars Ends --------------------- */
+/*---------------- 1.10 -  Back To Top Starts -------------------------- */
+/*---------------- 1.10 -  Back To Top Ends ------------------------ */
+/******************************* 
+    1 - GENERAL CSS ENDS 
+********************************/
+/******************************* 
+    2 - HEADER CSS STARTS 
+********************************/
+/*-- Top-Bar --*/
+/*-- ../Top-Bar --*/
+/*-- Top-Bar One --*/
+/*-- ./ Top-Bar One --*/
+/*-- Top-Bar Two --*/
+/*-- ./ Top-Bar Two --*/
+/*-- Header One --*/
+/*-- ./ Header One --*/
+/*-- Header Two --*/
+/*-- ./ Header Two --*/
+/*-- Header With Icons --*/
+/*-- ./ Header Two --*/
+/*-- Menu-bar --*/
+/*-- ./ Menu-bar --*/
+/*-- Sticky Header --*/
+/*-- ./Sticky Header --*/
+/*--- Header Navigation Megamenu ---*/
+/*--- ./ Header Navigation Megamenu ---*/
+/*--- Header Responsive ---*/
+/*-- Header One --*/
+/*-- Header Two --*/
+/*-- Header Three --*/
+/******************************* 
+    2 - HEADER CSS ENDS 
+********************************/
+/******************************* 
+    3 - HOME 1 CSS STARTS 
+********************************/
+/*-- Slider One --*/
+/*-- ./Slider One --*/
+/*-- Best Place --*/
+/*-- ./Best Place --*/
+/*-- Promotion Choice --*/
+/*-- ./ Promotion Choice --*/
+/*-- Travellers Choice --*/
+/*-- ./Travellers Choice --*/
+/*-- Newsletter --*/
+/*-- ./Newsletter --*/
+/*-- Video --*/
+/*-- ./ Video --*/
+/*-- Latest News--*/
+/*-- ./ Latest News --*/
+/******************************* 
+    3 - HOME 1 CSS STARTS 
+********************************/
+/******************************* 
+    4 - HOME 2 CSS STARTS 
+********************************/
+/*-- Main Slider-1 --*/
+/*-- ./ Main Slider-1 --*/
+/*-- Recommended --*/
+/*-- ./ Recommended --*/
+/*-- Popular Place-1 --*/
+/*-- ./ Popular Place-1 --*/
+/*-- Top Hotels -1 --*/
+/*-- ./ Top Hotels-1 --*/
+/*-- Traveler's Choice --*/
+/*-- ./ Traveler's Choice --*/
+/*-- Travel Agency --*/
+/*-- ./ Travel Agency --*/
+/*-- Testimonials --*/
+/*-- ./ Testimonials --*/
+/*-- Patners --*/
+/*-- ./ Patners --*/
+/*-- Newsletter --*/
+/*-- ./ Newsletter --*/
+/******************************* 
+    4 - HOME 2 CSS ENDS 
+********************************/
+/******************************* 
+    5 - HOME 3 CSS STARTS 
+********************************/
+/*-- Banner One --*/
+/*-- Banner One --*/
+/*-- Ideal Trip --*/
+/*-- ./ Ideal Trip --*/
+/*-- Testimonials-2 --*/
+/*-- ./ Testimonials-2 --*/
+/*-- Travellers Choice --*/
+/*-- ./ Travellers Choice --*/
+/*-- Travel Video --*/
+/*-- ./ Travel Video --*/
+/*-- Popular Destination --*/
+/*-- ./ Popular Destination --*/
+/*-- Spotlight --*/
+/*-- ./ Spotlight --*/
+/*-- News Slider --*/
+/******************************* 
+    5 - HOME 3 CSS ENDS 
+********************************/
+/******************************* 
+    6 - HOME 4 CSS STARTS 
+********************************/
+/******************************* 
+    6 - HOME 4 CSS ENDS 
+********************************/
+/******************************* 
+   7 - LISTING CSS STARTS 
+********************************/
+/*-- Price Finder --*/
+/*-- ./ Price Finder --*/
+/*-- Short By --*/
+/*-- ./ Short By --*/
+/*-- Sidebar --*/
+/*.widget-map::after {
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.widget-map .theme-btn {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+    width: 120px;
+}*/
+/*-- ./ Sidebar --*/
+/*-- Short By --*/
+/*-- ./ Short By --*/
+/***** Listing Detail ************/
+/*-- Detail Tabs --*/
+/* .detail-tabs .list-inline>li:last-child {
+    border-right: 1px solid #dddddd !important;
+} */
+/*-- ./ Detail Tabs --*/
+/*-- Overview --*/
+/*-- ./ Overview --*/
+/*-- Hotels and Rooms --*/
+/*-- ./ Hotels and Rooms --*/
+/*-- Hotels Review --*/
+/*-- ./ Hotels Review --*/
+/*-- Photo Gallery By --*/
+/*-- ./ Photo Gallery By --*/
+/*-- Hotel Aminities --*/
+/*-- ./ Hotel Aminities --*/
+/*-- Listing Slider --*/
+/*-- ./ Listing Slider --*/
+/******************************* 
+   7 - LISTING CSS ENDS 
+********************************/
+/******************************* 
+   8 - BLOG CSS STARTS 
+********************************/
+/*--------- 1.12 Breadcrumb Starts ---------- */
+/*--------- ./Breadcrumb Ends ---------- */
+/*---- Sidebar Widget ----*/
+/*---- ./Sidebar Widget ----*/
+/*---- Search Widget ----*/
+/*-- Comment --*/
+/******************************* 
+   8 - Blog CSS STARTS 
+********************************/
+/******************************* 
+    9 - CONTACT US CSS STARTS 
+********************************/
+/******************************* 
+    9 - CONTACT US CSS ENDS 
+********************************/
+/******************************* 
+    10 - EXTRA PAGES CSS STARTS 
+********************************/
+/*-- Confirm Page --*/
+/** Insurance **/
+/*-- Insurance ---*/
+/*-- Holidays --*/
+/******************************* 
+    10 - PAGES CSS ENDS 
+********************************/
+/******************************* 
+    11 - ERROR CSS STARTS 
+********************************/
+/******************************* 
+    11 - ERROR CSS STARTS 
+********************************/
+/******************************* 
+    12 - COMINGSOON CSS STARTS 
+********************************/
+/******************************* 
+    12 - COMINGSOON CSS ENDS 
+********************************/
+/******************************* 
+    13 - MY ACCOUNT 
+********************************/
+/******************************* 
+    13 - MY ACCOUNT 
+********************************/
+/******************************* 
+    14 - FOOTER STARTS 
+********************************/
+/*-- Page Footer One --*/
+/*-- Page Footer Two --*/
+/******************************* 
+    14 - FOOTER ENDS 
+********************************/
+/******************************* 
+    15 - COLOR STARTS 
+********************************/
+/* Color */
+/* Background Color */
+/* Border Color */
+/******************************* 
+    15 - COLOR ENDS 
+********************************/
+/*second navbar code*/
 #loading {
 	background: #ffffff none repeat scroll 0 0;
 	height: 100%;
