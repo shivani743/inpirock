@@ -18,22 +18,6 @@
                                 <span class="fa fa-search form-control-feedback"></span>
                                 <input type="text" class="form-control" placeholder="Search">
                             </div>
-
-                        </li>
-                        <li class="dropdown active">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                aria-haspopup="true"><i class="far fa-heart"></i></a>
-                            <ul class="dropdown-menu">
-                                <p>Collect your favorite places, and we will help you build a trip for them</p>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                aria-haspopup="true"><i class="fas fa-th"></i></a>
-                            <ul class="dropdown-menu">
-                                <p>Your trips will show here.</p>
-                                <li><a href="listing-detail-1.html">Create new Trip </a></li>
-                            </ul>
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
@@ -43,8 +27,7 @@
                                 <li><a href="portfolio-col-three.html"> Give Feedback</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Log In</a></li>
-
+                        <li><a href="#" data-toggle="modal" data-target="#exampleModalCenter">Log In</a></li>
                         <li style="padding: 0px 0px 0px 42px!important;">
                             <a href="" type="button" class="btn btn-primary">Start Planning</a>
                         </li>
@@ -56,3 +39,70 @@
     </div>
 </header>
 <!-- / Main Header-1 Ends -->
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 0px solid #e5e5e5;">
+                <h5 class="modal-title" id="exampleModalLongTitle">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </h5>
+
+            </div>
+            <div class="modal-body login-modal">
+                <h3 align="center"><strong>Log in to Amost Haven India</strong></h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control login-from" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control login-from" placeholder="Password">
+                            </div>
+                            <div class="col-md-12">
+                                <small><i class="fas fa-lock"></i>&nbsp;&nbsp;Forgot Password</small>
+                            </div>
+
+                            <div class="form-group"> <br><br>
+                                <button type="submit" class="btn btn-dark">Submit</button>
+                            </div>
+
+                            <div class="demo">
+                                <div class="or or--x" aria-role="presentation">OR</div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4 col-sm-4">
+                                    <a href="#" class="btn btn-lg btn-block btn-facebook">
+                                        <i class="fab fa-facebook"></i>&nbsp;
+                                        <span class="hidden-xs">Login with Facebook</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4 col-sm-4">
+                                    <a href="#" class="btn btn-lg btn-block btn-google-android">
+                                        <i class="fab fa-google"></i>&nbsp;
+                                        <span class="hidden-xs">Login with Google</span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4 col-sm-4">
+                                    <a href="#" class="btn btn-lg btn-block btn-google-android">
+                                        <i class="fab fa-apple"></i>&nbsp;
+                                        <span class="hidden-xs">Login with Apple</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div align="center" class="font-weight-normal pt-30 pb-50">Don't have an account yet? <strong>Sign up</strong></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

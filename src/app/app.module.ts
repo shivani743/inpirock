@@ -7,8 +7,8 @@ import { HomeModule } from './home/home.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { GooglePlacesComponent } from './google-places/google-places.component';
-import { GooglePlaceModule } from "ngx-google-places-autocomplete";
+// import { GooglePlacesComponent } from './google-places/google-places.component';
+// import { GooglePlaceModule } from "ngx-google-places-autocomplete";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
@@ -16,7 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    GooglePlaceModule,
+    // GooglePlaceModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
@@ -26,7 +26,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    GooglePlacesComponent
+    // GooglePlacesComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

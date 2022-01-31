@@ -25,12 +25,13 @@
 
 
   <!-- Color CSS -->
-  <link href="assets/css/multicolor/theme-color.css" rel="stylesheet" id="theme-config-link">
+  <!-- <link href="assets/css/multicolor/theme-color.css" rel="stylesheet" id="theme-config-link"> -->
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
 <body>
   <app-root></app-root>
@@ -47,13 +48,13 @@
 
 
 <!-- Custom JS -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDYwwQ-wTWZ6jI75jcsRz4if7dv30i5evo"></script>
-
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDYwwQ-wTWZ6jI75jcsRz4if7dv30i5evo"></script>
 <script src="assets/js/theme.js" type="text/javascript"></script>
 
 
 <script>
-  $(document).ready(function(e) {
+  $(document).ready(function (e) {
     console.log("first here called");
   });
 
@@ -62,12 +63,12 @@
     if (nav.length) {
       var fixmeTop = parseInt(nav.offset().top);
       var currentScroll = parseInt($(window).scrollTop());
-    if (currentScroll >= 50) {
+      if (currentScroll >= 50) {
         $('.fixme').addClass('fixed-top');
-    } else {
-      $('.fixme').removeClass('fixed-top');
+      } else {
+        $('.fixme').removeClass('fixed-top');
 
-    }
+      }
     }
   });
 </script>
@@ -77,7 +78,7 @@
   }
 
   // Close the dropdown if the user clicks outside of it
-  window.onclick = function(event) {
+  window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
       var i;
@@ -89,6 +90,6 @@
       }
     }
   }
-  </script>
+</script>
 
 </html>

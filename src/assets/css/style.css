@@ -7335,20 +7335,123 @@ ul#menu li {
     position: relative;
     line-height: 24px;
 }
+
 .duration span:hover {
     font-size: 13px;
-    color: rgb(255, 255, 255)!important;
+    color: rgb(255, 255, 255) !important;
     font-style: italic;
     font-weight: 400;
     position: relative;
     line-height: 24px;
 }
+
 .divider-5 {
     margin-top: 10px;
     margin-bottom: 10px;
     border: 0;
     border-top: 1px solid #c6c6c6;
 }
+
 .datepicker td, .datepicker th {
-    font-size: 13px!important;
+    font-size: 13px !important;
+}
+
+
+
+
+button.close {
+    background: #dadada;
+    padding: 3px 9px 7px 9px;
+    border-radius: 50%;
+}
+
+.close {
+    opacity: initial;
+}
+
+.login-from {
+    border: 1px solid #dadada !important;
+    border-radius: 100px !important;
+    height: 40px;
+}
+
+.login-modal {
+    padding: 20px 30px;
+}
+
+
+.btn-dark {
+    width: 100%;
+    background: #0082c4;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+/* Base styles */
+.or::before,
+.or::after {
+    content: "";
+}
+
+
+/* Horizontal */
+.or--x::before,
+.or--x::after {
+    position: relative;
+    border-top: 1px solid rgb(158, 158, 158);
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    margin-bottom: 0.15em;
+    overflow: hidden;
+}
+
+.or--x::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.or--x::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+
+/* Demo styles */
+.demo {
+    margin: 1em 1em;
+    text-align: center;
+}
+
+.demo .or {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #888888;
+    font-size: 0.75em;
+    margin: 2em auto;
+}
+
+.demo .or--x {
+    max-width: 40em;
+}
+
+
+.btn-facebook {
+    background-color: #3f52e3;
+    border-color: #3f52e3;
+    border-width: 1px;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 12px;
+}
+
+
+.btn-google-android {
+    background-color: #f8f8f8;
+    border-color: #c4c4c4;
+    border-width: 1px;
+    color: #000;
+    border-radius: 100px;
+    font-size: 12px;
 }

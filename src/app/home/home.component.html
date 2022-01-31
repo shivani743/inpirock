@@ -1,8 +1,8 @@
 
 
 
-   <!-- Main-Slider-1 Start -->
-   <div class="main-slider-1">
+<!-- Main-Slider-1 Start -->
+<div class="main-slider-1">
     <div class="main-slider owl-carousel dots-1" id="slider-main">
         <div class="item">
             <img alt="" src="assets/images/sliders/slider.jpg" />
@@ -26,7 +26,7 @@
                     <h3 class="text-white">The new way to plan your next trip</h3>
                     <p class="text-white">Create a fully customized
                         day by day itinerary for free</p>
-                        <img src="assets/images/sliders/tour.png" alt="" class="tour-img" />
+                    <img src="assets/images/sliders/tour.png" alt="" class="tour-img" />
 
                 </li>
             </ul>
@@ -39,16 +39,21 @@
 
 
                                 <div class="form-group col-sm-12">
-                                    <input ngx-google-places-autocomplete [options]='options' (onAddressChange)="address($event)" placeholder="Destinations or hotel name..." class="form-control name input-your-name" >
-                                    {{ formattedaddress }}
-                                    <span class="fa fa-user theme-color"></span>
+                                    <input ngx-google-places-autocomplete [options]='options'
+                                        (onAddressChange)="address($event)" placeholder="Destinations or hotel name..."
+                                        class="form-control name input-your-name">
+                                    <!-- {{ formattedaddress }} -->
+                                    <span class="fa fa-question-circle theme-color"></span>
+
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <input class="dpd1 form-control" data-date-format="dd-mm-yyyy" placeholder="Check in" type="text">
+                                    <input class="dpd1 form-control" data-date-format="dd-mm-yyyy"
+                                        placeholder="Check in" type="text">
                                     <span class="fa fa-calendar theme-color"></span>
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <input class="dpd2 form-control" data-date-format="dd-mm-yyyy" type="text" placeholder="Check out">
+                                    <input class="dpd2 form-control" data-date-format="dd-mm-yyyy" type="text"
+                                        placeholder="Check out">
                                     <span class="fa fa-calendar theme-color"></span>
                                 </div>
                                 <div class="form-group col-sm-6 persons clearfix">
@@ -70,7 +75,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group col-sm-12">
-                                    <button (click)="search()" class="theme-btn" data-width="100%" type="submit"> SEARCH NOW </button>
+                                    <!-- <ion-button>Default</ion-button> -->
+                                    <button (click)="search()" class="theme-btn" data-width="100%" type="submit"> SEARCH
+                                        NOW </button>
                                 </div>
                             </div>
                         </form>

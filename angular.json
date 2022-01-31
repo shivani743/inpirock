@@ -31,11 +31,14 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+           
             "scripts": []
           },
           "configurations": {
@@ -99,12 +102,41 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*.svg",
+                "input": "node_modules/ionicons/dist/ionicons/svg",
+                "output": "./svg"
+              }
             ],
             "styles": [
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "ionic-cordova-serve": {
+          "builder": "@ionic/angular-toolkit:cordova-serve",
+          "options": {
+            "cordovaBuildTarget": "inspi:ionic-cordova-build",
+            "devServerTarget": "inspi:serve"
+          },
+          "configurations": {
+            "production": {
+              "cordovaBuildTarget": "inspi:ionic-cordova-build:production",
+              "devServerTarget": "inspi:serve:production"
+            }
+          }
+        },
+        "ionic-cordova-build": {
+          "builder": "@ionic/angular-toolkit:cordova-build",
+          "options": {
+            "browserTarget": "inspi:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "inspi:build:production"
+            }
           }
         }
       }
