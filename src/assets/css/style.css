@@ -7377,15 +7377,25 @@ button.close {
 
 .login-modal {
     padding: 20px 30px;
+    background-position: bottom;
+    background-size: cover;
 }
 
 
 .btn-dark {
     width: 100%;
-    background: #0082c4;
+    background-color: #00a4da;
     border: none;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 10px;
+    color: #fff;
+}
+.btn-dark:hover {
+    width: 100%;
+    background-color: #000000;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
     color: #fff;
 }
 
@@ -7444,6 +7454,7 @@ button.close {
     color: #fff;
     border-radius: 100px;
     font-size: 12px;
+    box-shadow: 3px 3px 13px #0000002b;
 }
 
 
@@ -7454,4 +7465,8 @@ button.close {
     color: #000;
     border-radius: 100px;
     font-size: 12px;
+    box-shadow: 3px 3px 13px #0000002b;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 0px auto -webkit-focus-ring-color !important;
 }
