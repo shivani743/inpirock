@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ServerService } from '../services/server.service';
+
 declare var google: any;
 @Component({
   selector: 'app-home',
