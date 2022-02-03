@@ -476,10 +476,19 @@ img {
     padding-bottom: 70px;
     padding-top: 70px;
 }
+.ptb-30 {
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
 
 .mb-30 {
     margin-bottom: 30px;
 }
+.border-top-bottom-15{
+    border-top: 15px solid #eceff1;
+    border-bottom: 15px solid #eceff1;
+}
+
 
 @media (max-width: 991px) {
     .sx-mt-50 {
@@ -6966,6 +6975,7 @@ ul.list-caret li:before, .search-form button.form-control:hover {
     box-shadow: 0px 1px 11px 4px #00004421;
     border-radius: 10px;
     background: #fff;
+    display:flex;
 }
 
 .num.one {
@@ -7818,17 +7828,13 @@ button.close {
 .card {
     position: relative;
     display: flex;
-    width: 350px;
+    width:100%;
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid #d2d2dc;
     border-radius: 11px;
-    -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
-    box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+    background: #f7f7f700;
+    border:none;
 }
 
 .card .card-body {
@@ -7838,16 +7844,6 @@ button.close {
 .card-body {
     flex: 1 1 auto;
     padding: 1.25rem
-}
-
-p {
-    font-size: 0.875rem;
-    margin-bottom: .5rem;
-    line-height: 1.5rem
-}
-
-h4 {
-    line-height: .2 !important
 }
 
 .profile {
@@ -7888,7 +7884,8 @@ h4 {
     padding: 16px 16px 16px 24px;
     position: absolute;
     right: 32px;
-    top: 20%;
+    z-index: 1;
+    margin-top: -80px;
 }
 .HoverTextInput__lgContainer {
     margin: -0.5rem;
@@ -7949,3 +7946,116 @@ h4 {
 .ml-12{
     margin-left: 12px;
 }
+
+
+.carousel-multi-item .controls-top .btn-floating {
+    background: #4285f4;
+}
+a.waves-effect, a.waves-light {
+    display: inline-block;
+}
+.btn-floating {
+    box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
+    width: 47px;
+    height: 47px;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin: 10px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+.left-right-10{
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+}
+.bg-gray{
+    background: #eceff1;
+}
+.card-title-travel{
+    line-height: 22px;
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.card-text{
+    line-height: 20px;
+    font-size: 14px;
+}
+.bod-radius-10{
+    border-radius: 10px;
+}
+.AddReservationButtons__separator {
+    background-color: #dee2e6;
+    color: #dee2e6;
+    height: 16px;
+    width: 1px;
+}
+.ml-2, .mx-2 {
+    margin-left: 8px!important;
+}
+.IconAndTextButton__text {
+    color: #6c757d;
+    font-size: 10px;
+}
+.AddReservationButtons {
+    background: #f3f4f5;
+    border-radius: 16px;
+}
+
+.p-3 {
+    padding: 16px!important;
+}
+.h-100 {
+    height: 100%!important;
+}
+.mt-2, .my-2 {
+    margin-top: 8px!important;
+}
+.align-items-baseline {
+    align-items: center!important;
+}
+.d-flex {
+    display: flex!important;
+    justify-content: space-around;
+}
+.BudgetSnapshot {
+    background: #f3f4f5;
+    border-radius: 16px;
+}
+.font-size-24 {
+    font-size: 1.5rem;
+}
+.itinerary-text{
+    font-weight: 900;
+    font-size: 30px;
+}
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 3px solid #eceff1;
+    background: #eceff1;
+  }
+  
+  .icon {
+    padding: 15px;
+    background: #efefef;
+    color: #616161;
+    min-width: 50px;
+    text-align: center;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: #eceff1;
+  }
+  
