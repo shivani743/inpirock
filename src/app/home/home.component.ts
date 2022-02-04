@@ -1,14 +1,6 @@
-import {
-  Component,
-  OnInit
-} from '@angular/core';
-import {
-  ActivatedRoute,
-  Router
-} from '@angular/router';
-import {
-  ServerService
-} from '../services/server.service';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute,Router} from '@angular/router';
+import {ServerService} from '../services/server.service';
 
 declare var google: any;
 @Component({
@@ -17,14 +9,13 @@ declare var google: any;
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
   destination: any;
   addresses: any;
   place_ids: any = [];
   startDate: any;
   endDate: any;
   resp: any;
-  constructor(private route: ActivatedRoute, private router: Router, private server: ServerService) {}
+  constructor(private route: ActivatedRoute, private router: Router, private server: ServerService) { }
   ngOnInit() {
     // this.searchh()
   }
@@ -56,12 +47,12 @@ export class HomeComponent implements OnInit {
     }
     console.log(this.place_ids);
   }
-deletePlace(address: any) {
-  if (this.place_ids.includes(address.place_id)) {
-    console.log('found');
-    this.place_ids.splice(this.place_ids.indexOf(address.place_id), 1);
+  deletePlace(address: any) {
+    if (this.place_ids.includes(address.place_id)) {
+      console.log('found');
+      this.place_ids.splice(this.place_ids.indexOf(address.place_id), 1);
+    }
   }
-}
   getPlan() {
     if (this.startDate != null || this.startDate != undefined || this.startDate != '' ||
       this.endDate != null || this.endDate != undefined || this.endDate != '') {
@@ -71,15 +62,15 @@ deletePlace(address: any) {
         "place_ids": this.place_ids
       }
       this.server.postPlan(payload).subscribe((res) => {
-          this.resp = res;
+        this.resp = res;
 
-          localStorage.setItem('plan', JSON.stringify(this.resp));
-          this.router.navigate(['/places'], {
-            queryParams: {
-              data: this.resp
-            }
-          })
-        }),
+        localStorage.setItem('plan', JSON.stringify(this.resp));
+        this.router.navigate(['/places'], {
+          queryParams: {
+            data: this.resp
+          }
+        })
+      }),
         (err: any) => {
           console.log(err)
         }
