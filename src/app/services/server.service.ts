@@ -14,7 +14,7 @@ export class ServerService {
 
 
   }
-  private BASE_URL = 'http://localhost:3000/user/';
+  private BASE_URL = 'http://52.66.242.10/user/';
   private sample_photo_id = 'Aap_uEBLF3KN_DIY00w1ORDNCndNVnZbbt5Y5hGrKAK1L4f5n8Ln1Pq7oJBJcSfORwAcGk8u2Zr8kRKBJyZtFLYIQfbBrS37Z0fBN_ueJPjwipezOnx5BEaXl519BTdQ6G1ydEg_wXJYG7lTL1Yo1UJotkButvErzQeaZQfrrIdhdg2seLfM';
   private sampleWidth = 4000;
   private sampleHeight = 1800
@@ -27,8 +27,8 @@ export class ServerService {
 
     return this.http.get(url);
   }
-  getPlacesSuggestions(placeName: string) {
-    const url = this.BASE_URL + 'suggestplace/' + placeName;
+  getPlacesSuggestions(placeName: any) {
+    const url = this.BASE_URL + 'suggestplace?query=' + placeName;
     // const token = localStorage.getItem('token')
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
@@ -36,7 +36,16 @@ export class ServerService {
     const req = this.http.get(url, { headers: headers })
     return req
   }
+firstCall(place_ids:any[]) {
+  const url = this.BASE_URL + 'getplan';
+  // const token = localStorage.getItem('token')
+  const headers = new HttpHeaders({
+    'Content-Type': 'application/json',
+  })
+  const req = this.http.post(url, JSON.stringify(place_ids), { headers: headers })
+  return req
 
+}
   postPlan(payload: any) {
     // const token = localStorage.getItem('token')
     const headers = new HttpHeaders({
@@ -44,7 +53,7 @@ export class ServerService {
 
     })
     // Authorization: `Bearer ` + token,
-    return this.http.post(this.BASE_URL + '/user/postplan', JSON.stringify(payload), { headers: headers })
+    return this.http.post(this.BASE_URL + 'postplan', JSON.stringify(payload), { headers: headers })
   }
 
   async getPlaces(placeName: string) {

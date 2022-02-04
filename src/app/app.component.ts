@@ -16,8 +16,8 @@ export class AppComponent {
   }
 
   async ngOnInit() {
-    const res = await this.server.getPlaces('Goa')
-    console.log(res, "saty")
+    // const res = await this.server.getPlaces('Goa')
+    // console.log(res, "saty")
   }
 
 }

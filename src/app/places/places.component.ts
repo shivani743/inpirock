@@ -7,17 +7,19 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./places.component.scss']
 })
 export class PlacesComponent implements OnInit {
-@Input() placeName: string = 'Delhi';
-@Input() date: string = '2022-02-02';
+// @Input() placeName: string = 'Delhi';
+// @Input() date: string = '2022-02-02';
+@Input() data: any;
   constructor(private route: ActivatedRoute, private router: Router) {
 
-    this.route.queryParams.subscribe(params => {
-      this.placeName = params['placeName'];
-      this.date = params['date'];
-    })
+    // this.route.queryParams.subscribe(params => {
+    //   this.placeName = params['placeName'];
+    //   this.date = params['date'];
+    // })
    }
 
   ngOnInit(): void {
+    console.log(this.data)
   }
 
 }

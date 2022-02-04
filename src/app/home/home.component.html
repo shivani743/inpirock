@@ -80,14 +80,24 @@
 
 
                                 <div class="form-group col-sm-12">
-                                    <input ngx-google-places-autocomplete [options]='options'
-                                        (onAddressChange)="address($event)" placeholder="Destinations or hotel name..."
+                                    <input name="destination" [(ngModel)]="destination" (ngModelChange)="change()" placeholder="Destinations or hotel name..."
                                         class="form-control name input-your-name">
                                     <!-- {{ formattedaddress }} -->
+                                    <div *ngFor ="let address of addresses" class="address-list">
+                                        <div class="address-item">
+                                            <div class="address-item-inner">
+                                                <div class="address-item-content">
+                                                    <h4 class="address-item-title">{{ address.description }}</h4>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        </div>
                                     <span class="fa fa-question-circle theme-color"></span>
 
                                 </div>
                                 <div class="form-group col-sm-12"></div>
+
                                 <!-- <div class="form-group col-sm-6">
                                     <input class="dpd1 form-control" data-date-format="dd-mm-yyyy"
                                         placeholder="Check in" type="text">
@@ -118,7 +128,7 @@
                                 </div> -->
                                 <div class="form-group col-sm-12">
                                     <!-- <ion-button>Default</ion-button> -->
-                                    <button (click)="search()" class="theme-btn" data-width="100%" type="submit"> SEARCH
+                                    <button (click)="getPlan()" class="theme-btn" data-width="100%" type="submit"> SEARCH
                                         NOW </button>
                                 </div>
                             </div>
@@ -491,7 +501,6 @@
     </div>
 </section>
 <!-- Ideal Trip Ends -->
-{{items}}
 
 
 <!-- Patners Start -->

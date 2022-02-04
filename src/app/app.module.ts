@@ -24,6 +24,7 @@ import { LocalStorageService } from './core/services/storage/local-storage.servi
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+
     // HomeComponent
   ],
   declarations: [

@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'mat-daterangepicker/mat-daterangepicker.theme.scss';
 
+@include mat-daterangepicker-theme($theme);
 .page-section {
     height: 480px;
     width: 50%;
@@ -12,7 +14,7 @@ background: linear-gradient(45deg, #43cea2 10%, #185a9d 90%);
 }
 
 .navigation {
-  position: fixed; 
+  position: fixed;
     width: 30%;
     margin-left: 2%;
   background-color: #999;
@@ -20,15 +22,15 @@ background: linear-gradient(45deg, #43cea2 10%, #185a9d 90%);
 
   &__link {
         display: block;
-    color: #ddd; 
+    color: #ddd;
     text-decoration: none;
     padding: 1em;
         font-weight: 400;
-        
+
         &:hover {
             background-color: #aaa;
         }
-    
+
        &.active {
            color: white;
              background-color: rgba(0,0,0,0.1);
